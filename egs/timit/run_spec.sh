@@ -15,7 +15,7 @@ if [ $# -ne 0 ]; then
 fi
 
 ./local/spec_data_prep.sh --TIMIT_RAW_DATA $TIMIT_RAW_DATA \
-    --TIMIT_KALDI_EGS $TIMIT_DIR --KALDI_ROOT $KALDI_DIR || exit 1;
+    --TIMIT_KALDI_EGS $TIMIT_DIR --KALDI_ROOT $KALDI_ROOT || exit 1;
 
 # i/o configurations
 exp_dir=exp/conv1_bn_spec_20_20
